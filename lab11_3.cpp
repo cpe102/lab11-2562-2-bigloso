@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void mySwap (int &,int &); //Pass variables by references
+int mySwap (int &a,int &b); //Pass variables by references
 
 int main(){
 	int x = 6, y = 9;
@@ -21,3 +21,9 @@ int main(){
 
 }
 */
+int mySwap (int &a,int &b){
+	int c ;
+	c=a ;
+	a=b ;
+	b=a ;
+}
